@@ -1,0 +1,81 @@
+
+   
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Escolar - Calificaciones del Maestro</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+ 
+    {% include("navbar_maestro.html")%}
+  <div class="container mt-4">
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <h1 class="display-4">Calificaciones de Estudiantes</h1>
+      <p class="lead">Aquí puedes ver y gestionar las calificaciones de tus estudiantes.</p>
+      <hr class="my-4">
+      <p>Usa los botones de acción para editar o eliminar las calificaciones.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Aprende más</a>
+    </div>
+
+    <!-- Tarjeta de perfil del maestro -->
+    <div class="card mb-4">
+      <div class="card-header">
+        Perfil del Maestro
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Nombre del Maestro: Juan Pérez</h5>
+        <p class="card-text">Asignatura: Matemáticas</p>
+        <p class="card-text">Correo: juan.perez@example.com</p>
+      </div>
+    </div>
+
+    <!-- Lista de estudiantes con calificaciones -->
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>
+          <strong>Andrés Salazar</strong><br>
+          Calificación: 85<br>
+          Comentarios: Buen desempeño, pero necesita mejorar en álgebra.
+        </span>
+        <span>
+          <a class="btn btn-primary btn-sm mr-2" href="#">Editar</a>
+          <a class="btn btn-danger btn-sm" href="#">Eliminar</a>
+        </span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>
+          <strong>José Mendivil</strong><br>
+          Calificación: 90<br>
+          Comentarios: Excelente trabajo en redacción y gramática.
+        </span>
+        <span>
+          <a class="btn btn-primary btn-sm mr-2" href="#">Editar</a>
+          <a class="btn btn-danger btn-sm" href="#">Eliminar</a>
+        </span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>
+          <strong>María López</strong><br>
+          Calificación: 88<br>
+          Comentarios: Participación activa en clase y buenas prácticas de laboratorio.
+        </span>
+        <span>
+          <a class="btn btn-primary btn-sm mr-2" href="#">Editar</a>
+          <a class="btn btn-danger btn-sm" href="#">Eliminar</a>
+        </span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Bootstrap JS y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

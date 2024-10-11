@@ -1,0 +1,31 @@
+{% include("navbar_admin.html")%}
+<div>
+
+    {% if usuarios %}
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">N°</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Password</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+            {% for mostrar in usuarios %}
+            
+           
+          <tr>
+            <th scope="row">{{mostrar.id}}</th>
+            <td>{{mostrar.correo}}</td>
+            <td>{{mostrar.password}}</td>
+           
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <p>no hay datos</p>
+      {% endif %}
+</div>

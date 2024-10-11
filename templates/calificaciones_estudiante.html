@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Escolar - Calificaciones</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    {% include("navbar_estudiante.html")%}
+    
+  <div class="container mt-4">
+    <!-- Tarjeta de perfil del usuario -->
+    <div class="card mb-4">
+      <div class="card-header">
+        Perfil del Usuario
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Nombre: María López</h5>
+        <p class="card-text">Correo: maria.lopez@example.com</p>
+        <p class="card-text">Curso: 10° Grado</p>
+      </div>
+    </div>
+
+    <!-- Tabla de calificaciones -->
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Asignatura</th>
+          <th scope="col">Calificación</th>
+          <th scope="col">Comentarios</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Matemáticas</td>
+          <td>85</td>
+          <td>Buen desempeño, pero necesita mejorar en álgebra.</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Lengua</td>
+          <td>90</td>
+          <td>Excelente trabajo en redacción y gramática.</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Ciencias</td>
+          <td>88</td>
+          <td>Participación activa en clase y buenas prácticas de laboratorio.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Bootstrap JS y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

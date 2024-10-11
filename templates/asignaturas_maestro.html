@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Escolar - Asignaturas del Maestro</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+ 
+    {% include("navbar_maestro.html")%}
+  <div class="container mt-4">
+    <!-- Tarjeta de perfil del maestro -->
+    <div class="card mb-4">
+      <div class="card-header">
+        Perfil del Maestro
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Nombre del Maestro: Juan Pérez</h5>
+        <p class="card-text">Correo: juan.perez@example.com</p>
+        <p class="card-text">Asignaturas: Matemáticas, Física</p>
+      </div>
+    </div>
+
+    <!-- Tabla de asignaturas -->
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Asignatura</th>
+          <th scope="col">Descripción</th>
+          <th scope="col">Horario</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Matemáticas</td>
+          <td>Curso de matemáticas básicas.</td>
+          <td>Lunes y Miércoles 10:00 - 12:00</td>
+          <td>
+            <button class="btn btn-info btn-sm">Detalles</button>
+            <button class="btn btn-warning btn-sm">Gestionar</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Física</td>
+          <td>Curso de física elemental.</td>
+          <td>Martes y Jueves 14:00 - 16:00</td>
+          <td>
+            <button class="btn btn-info btn-sm">Detalles</button>
+            <button class="btn btn-warning btn-sm">Gestionar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Bootstrap JS y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

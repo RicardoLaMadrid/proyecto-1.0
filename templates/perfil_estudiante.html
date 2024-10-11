@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil del Usuario</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    {% include("navbar_estudiante.html")%}
+  <div class="container mt-4">
+    <!-- Tarjeta de perfil del usuario -->
+    <div class="card mb-4">
+      <div class="card-header">
+        Perfil del Usuario
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Nombre: María López</h5>
+        <p class="card-text">Correo: maria.lopez@example.com</p>
+        <p class="card-text">Curso: 10° Grado</p>
+        <p class="card-text">Descripción: Estudiante apasionada por las matemáticas y las ciencias.</p>
+      </div>
+    </div>
+
+    <!-- Información de contacto -->
+    <div class="card mb-4">
+      <div class="card-header">
+        Información de Contacto
+      </div>
+      <div class="card-body">
+        <p class="card-text">Teléfono: +123 456 7890</p>
+        <p class="card-text">Dirección: Calle Falsa 123, Ciudad Ejemplo</p>
+      </div>
+    </div>
+
+    <!-- Actividades recientes -->
+    <div class="card mb-4">
+      <div class="card-header">
+        Actividades Recientes
+      </div>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Participó en la competencia de matemáticas - 05/03/2023</li>
+          <li class="list-group-item">Asistió al taller de ciencias - 20/02/2023</li>
+          <li class="list-group-item">Ganó el concurso de redacción - 15/01/2023</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

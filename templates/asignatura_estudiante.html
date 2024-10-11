@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Escolar - Asignaturas</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  {% include("navbar_estudiante.html")%}
+
+
+  <div class="container mt-4">
+    <!-- Tarjeta de perfil de la asignatura -->
+    <div class="card mb-4">
+      <div class="card-header">
+        Asignatura: Matemáticas
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Profesor: Juan Pérez</h5>
+        <p class="card-text">Descripción: Curso de matemáticas básicas.</p>
+        <p class="card-text">Horario: Lunes y Miércoles 10:00 - 12:00</p>
+      </div>
+    </div>
+
+    <!-- Tabla de temas/módulos -->
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Tema</th>
+          <th scope="col">Descripción</th>
+          <th scope="col">Fecha</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Álgebra</td>
+          <td>Introducción a las ecuaciones y desigualdades.</td>
+          <td>01/03/2023</td>
+          <td>
+            <button class="btn btn-info btn-sm">Detalles</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Geometría</td>
+          <td>Estudio de figuras y sus propiedades.</td>
+          <td>08/03/2023</td>
+          <td>
+            <button class="btn btn-info btn-sm">Detalles</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Bootstrap JS y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
